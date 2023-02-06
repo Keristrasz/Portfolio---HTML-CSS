@@ -1,169 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My portfolio</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <script
-      src="https://kit.fontawesome.com/4f33c23f9d.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
 
-  <body>
-    <nav id="navbar">
-      <a href="#welcome-section">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <main>
-      <section id="welcome-section">
-        <h1 id="welcome-title">Hey, I am Karel</h1>
-        <div id="welcome-subtitle">
-          a selftaught web developer & traffic engineer
-        </div>
-      </section>
-      <section id="projects">
-        <h2>Projects</h2>
-        <div id="individual-projects">
-          <div class="project-tile">
-            <a
-              href="https://replit.com/@KarelJek/DrumMachine-React#src/App.tsx"
-              target="_blank"
-            >
-              <p>Drum Machine</p>
-              <p class="projects-subtitle">React</p>
-              <img src="./images/drum-machine.PNG" alt="drum machine picture" />
-            </a>
-          </div>
-          <div class="project-tile">
-            <a
-              href="https://replit.com/@KarelJek/Calculator-React#src/App.jsx"
-              target="_blank"
-            >
-              <p>Calculator</p>
-              <p class="projects-subtitle">React</p>
-              <img src="./images/calculator.PNG" alt="calculator picture" />
-            </a>
-          </div>
-          <div class="project-tile">
-            <a
-              href="https://replit.com/@KarelJek/Product-Landing-Page-HTML-and-CSS#index.html"
-              target="_blank"
-            >
-              <p>Product Landing Page</p>
-              <p class="projects-subtitle">HTML & CSS</p>
-              <img
-                src="./images/product-landing-page.PNG"
-                alt="product landing page picture"
-              />
-            </a>
-          </div>
-          <div class="project-tile">
-            <a
-              href="https://replit.com/@KarelJek/Markdown-Previewer-React#src/App.jsx"
-              target="_blank"
-            >
-              <p>Markdown Previewer</p>
-              <p class="projects-subtitle">React</p>
-              <img
-                src="./images/markdown-previewer.PNG"
-                alt="markdown previewer picture"
-              />
-            </a>
-          </div>
-          <div class="project-tile">
-            <a
-              href="https://replit.com/@KarelJek/Technical-Documentation-HTML-and-CSS#index.html"
-              target="_blank"
-            >
-              <p>Tech. Documentation</p>
-              <p class="projects-subtitle">HTML & CSS</p>
-              <img
-                src="./images/technical-documentation.PNG"
-                alt="technical doc
-            picture"
-              />
-            </a>
-          </div>
-          <div class="project-tile">
-            <a
-              href="https://replit.com/@KarelJek/25-5-Clock-React#src/App.tsx"
-              target="_blank"
-            >
-              <p>25-5-Clock</p>
-              <p class="projects-subtitle">React</p>
-              <img src="./images/25-5-Clock.PNG" alt="25-5-Clock picture" />
-            </a>
-          </div>
-        </div>
-        <div class="project-tile" id="more-projects">
-          <a href="https://replit.com/@KarelJek" target="_blank">
-            <p>Click here for more projects...</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My portfolio</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <script src="https://kit.fontawesome.com/4f33c23f9d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <script type="module" src="main.js"></script>
+  <script type="module" src="canvas.js"></script>
+  <nav id="navbar">
+    <a href="#welcome-section">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <canvas></canvas>
+    <section id="welcome-section">
+      <h1 id="welcome-title" class="hidden">Hey, I am Karel</h1>
+      <div id="welcome-subtitle" class="hidden">
+        a selftaught react developer
+      </div>
+    </section>
+    <section id="projects">
+      <h2 class="hidden">My projects</h2>
+
+      <div id="individual-projects">
+        <div class="project-tile project-star hidden">
+          <a href="https://weather-app-javascript.kareljek.repl.co/" target="_blank">
+            <p>
+              <i class="fa-solid fa-star"></i>Weather App<i class="fa-solid fa-star"></i>
+            </p>
+            <p class="projects-subtitle">Javascript</p>
+            <img src="./images/weather-app.PNG" alt="weather app picture" />
           </a>
         </div>
-      </section>
-
-      <section id="contact">
-        <h2>Contact</h2>
-        <div id="contact-links">
-          <a
-            class="profile-link"
-            id="profile-link"
-            href="mailto:jezikkarel@gmail.com"
-            target="_blank"
-            ><i class="fa-solid fa-envelope"></i>Send a mail</a
-          >
-          <a
-            class="profile-link"
-            href="https://github.com/Keristrasz"
-            target="_blank"
-            ><i class="fa-brands fa-github"></i>GitHub</a
-          >
-          <a
-            class="profile-link"
-            href="https://www.linkedin.com/in/karel-j-06b422218/"
-            target="_blank"
-            ><i class="fa-brands fa-linkedin"></i>Linkedin</a
-          >
-          <a
-            class="profile-link"
-            href="https://www.freecodecamp.org/fcc15df3aa7-b419-4189-ac25-ff6626fdb4fa"
-            target="_blank"
-            ><i class="fa-brands fa-free-code-camp"></i>FreeCodeCamp</a
-          >
-          <a class="profile-link" href="tel:739619633" target="_blank"
-            ><i class="fa-solid fa-phone"></i>Call me</a
-          >
+        <div class="project-tile project-star hidden">
+          <a href="https://bulletinboard-kj.netlify.app/" target="_blank">
+            <p>
+              <i class="fa-solid fa-star"></i>Bulletin Board<i class="fa-solid fa-star"></i>
+            </p>
+            <p class="projects-subtitle">React & Redux TK & CRUD</p>
+            <img src="./images/bulletin-board.PNG" alt="bulletin board" />
+          </a>
         </div>
-        <h3>Certificates</h3>
-        <div id="certs">
-          <a
-            class="profile-link"
-            href="https://www.freecodecamp.org/certification/fcc15df3aa7-b419-4189-ac25-ff6626fdb4fa/responsive-web-design"
-            target="_blank"
-            ><i class="fa-brands fa-html5"></i
-            ><i class="fa-brands fa-css3-alt"></i>HTML & CSS</a
-          >
-
-          <a
-            class="profile-link"
-            href="https://www.freecodecamp.org/certification/fcc15df3aa7-b419-4189-ac25-ff6626fdb4fa/javascript-algorithms-and-data-structures"
-            target="_blank"
-            ><i class="fa-brands fa-js"></i>JavaScript</a
-          >
-
-          <a
-            class="profile-link"
-            href="https://www.freecodecamp.org/certification/fcc15df3aa7-b419-4189-ac25-ff6626fdb4fa/front-end-development-libraries"
-            target="_blank"
-            ><i class="fa-brands fa-react"></i>FrontEnd Libraries</a
-          >
+        <div class="project-tile project-star hidden">
+          <a href="https://beepsoundclock-kj.netlify.app/" target="_blank">
+            <p>
+              <i class="fa-solid fa-star"></i>1+5 beepSound Clock<i class="fa-solid fa-star"></i>
+            </p>
+            <p class="projects-subtitle">React & Typescript</p>
+            <img src="./images/25-5-Clock.PNG" alt="1+5-Clock picture" />
+          </a>
         </div>
-      </section>
-      <footer>© Created by Karel Ježík - jezikkarel@gmail.com</footer>
-    </main>
-  </body>
+        <div class="project-tile hidden">
+          <a href="https://drummachine-react.kareljek.repl.co/" target="_blank">
+            <p>Drum Machine</p>
+            <p class="projects-subtitle">React & Typescript</p>
+            <img src="./images/drum-machine.PNG" alt="drum machine picture" />
+          </a>
+        </div>
+        <div class="project-tile hidden">
+          <a href="https://calculator-kj.netlify.app/" target="_blank">
+            <p>Calculator</p>
+            <p class="projects-subtitle">React</p>
+            <img src="./images/calculator.PNG" alt="calculator picture" />
+          </a>
+        </div>
+        <div class="project-tile hidden">
+          <a href="https://exercise-tracker-node-and-express-and-mongoose.kareljek.repl.co/" target="_blank">
+            <p>Exercise Backend Tracker</p>
+            <p class="projects-subtitle">Express & Mongoose</p>
+            <img src="./images/exercise-tracker.PNG" alt="exercise tracker picture" />
+          </a>
+        </div>
+      </div>
+      <div class="project-tile hidden" id="more-projects">
+        <a href="https://replit.com/@KarelJek?tab=repls" target="_blank">
+          <p>Click here for more projects...</p>
+        </a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="hidden">Contact</h2>
+      <div class="hidden" id="contact-links">
+        <a class="profile-link" id="profile-link" href="mailto:jezikkarel@gmail.com" target="_blank"><i
+            class="fa-solid fa-envelope"></i>Send a mail</a>
+        <a class="profile-link" href="tel:739619633" target="_blank"><i class="fa-solid fa-phone"></i>Call me</a>
+        <a class="profile-link" href="https://www.linkedin.com/in/karel-j-06b422218/" target="_blank"><i
+            class="fa-brands fa-linkedin"></i>Linkedin</a>
+        <a class="profile-link" href="https://github.com/Keristrasz" target="_blank"><i
+            class="fa-brands fa-github"></i>GitHub</a>
+        <a class="profile-link" href="https://replit.com/@KarelJek?tab=repls" target="_blank"><i
+            class="fa-solid fa-code"></i>Replit</a>
+        <a class="profile-link" href="https://www.freecodecamp.org/fcc15df3aa7-b419-4189-ac25-ff6626fdb4fa"
+          target="_blank"><i class="fa-brands fa-free-code-camp"></i>FreeCodeCamp</a>
+      </div>
+      <h3 class="hidden">FreeCodeCamp Certificates</h3>
+      <div class="hidden" id="certs">
+        <a class="profile-link"
+          href="https://www.freecodecamp.org/certification/fcc15df3aa7-b419-4189-ac25-ff6626fdb4fa/responsive-web-design"
+          target="_blank"><i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i>HTML &
+          CSS</a>
+
+        <a class="profile-link"
+          href="https://www.freecodecamp.org/certification/fcc15df3aa7-b419-4189-ac25-ff6626fdb4fa/javascript-algorithms-and-data-structures"
+          target="_blank"><i class="fa-brands fa-js"></i>JavaScript</a>
+
+        <a class="profile-link"
+          href="https://www.freecodecamp.org/certification/fcc15df3aa7-b419-4189-ac25-ff6626fdb4fa/front-end-development-libraries"
+          target="_blank"><i class="fa-brands fa-react"></i>FrontEnd Libraries</a>
+        <a class="profile-link"
+          href="https://www.freecodecamp.org/certification/fcc15df3aa7-b419-4189-ac25-ff6626fdb4fa/back-end-development-and-apis"
+          target="_blank"><i class="fa-solid fa-server"></i>BackEnd</a>
+      </div>
+    </section>
+
+    <footer>© Created by Karel Ježík - jezikkarel@gmail.com</footer>
+  </main>
+</body>
+
 </html>

@@ -7,6 +7,7 @@
 
 html {
   scroll-behavior: smooth;
+  margin: 0px;
 }
 
 body {
@@ -36,9 +37,11 @@ nav {
   /* border-bottom: 3px solid rgb(255, 255, 255); */
   position: fixed;
   width: 100%;
+  left: 0px;
   top: 0px;
   display: flex;
   justify-content: space-evenly;
+  z-index: 1;
 }
 
 a {
@@ -48,7 +51,7 @@ a {
 }
 
 nav > a {
-  padding: 0.2em 0.5em;
+  padding: 0.2em 0.2em;
 }
 
 nav > a:hover {
@@ -119,11 +122,15 @@ img {
 }
 
 .project-tile {
-  border: 3px solid #262730;
+  border: 3px solid var(--blue);
   max-width: 400px;
   max-height: 500px;
   transition: border 0.3s ease-in-out;
 }
+
+/* .project-star {
+  border: 3px solid var(--blue);
+} */
 
 .project-tile:hover {
   border: 3px solid var(--green);
@@ -170,6 +177,11 @@ i {
   margin: 0em 0.1em;
 }
 
+.fa-star {
+  margin-left: 0.25em;
+  color: rgb(204, 169, 82);
+}
+
 #contact-links > a,
 #certs > a {
   padding: 0.25em;
@@ -192,4 +204,51 @@ footer {
   background-color: var(--blue);
   font-size: 0.6em;
   padding: 0.5em;
+}
+
+/* ANIMATIONS */
+
+/* .hidden {
+  opacity: 1;
+  filter: blur(4px);
+  transform: translateY(35%);;
+  transition: all 1.5s;
+} */
+
+.hidden:nth-child(3n + 1) {
+  opacity: 0;
+  filter: blur(4px);
+  transform: translateX(-30%);
+  transition: all 1.25s;
+}
+
+.hidden:nth-child(3n) {
+  opacity: 0;
+  filter: blur(4px);
+  transform: translateX(-30%);
+  transition: all 1.25s;
+}
+
+.hidden:nth-child(3n + 2) {
+  opacity: 0;
+  filter: blur(4px);
+  transform: translateY(30%);
+  transition: all 1.25s;
+}
+
+.show:nth-of-type(1n) {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transform: translateY(0);
+}
+
+/* CANVAS */
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  background-color: transparent;
 }
